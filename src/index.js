@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MainLayout from './containers/Global/MainLayout'
+import FreshLayout from './containers/Global/FreshLayout'
 
-ReactDOM.render(<MainLayout />, document.getElementById('root'));
+//引入路由
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+
+ReactDOM.render((
+  <Router>
+    <FreshLayout />
+  </Router>
+), document.getElementById('root'));
