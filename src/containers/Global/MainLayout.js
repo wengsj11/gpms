@@ -51,7 +51,7 @@ export default class MainLayout extends Component {
           </div>
           <Menu mode="inline" defaultSelectedKeys={['1']}>
               <Menu.Item key="0">
-                <Link to="/home">
+                <Link to="/">
                   <Icon type="home" />
                   <span>首页</span>
                 </Link>
