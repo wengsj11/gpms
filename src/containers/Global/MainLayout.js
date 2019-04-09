@@ -71,8 +71,16 @@ export default class MainLayout extends Component {
               <span>nav 3</span>
             </Menu.Item> */}
             <SubMenu key="sub3" title={<span><Icon type="form" /><span>论文管理</span></span>}>
-              <Menu.Item key="9">开题报告</Menu.Item>
-              <Menu.Item key="10">中期检查</Menu.Item>
+              <Menu.Item key="9">
+                <Link to="/PaperManage/Proposal/Index">
+                  开题报告
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="10">
+                <Link to="/PaperManage/MidTermExam/Index">
+                  中期检查
+                </Link>
+              </Menu.Item>
               {/* <Menu.Item key="11">option11</Menu.Item>
               <Menu.Item key="12">option12</Menu.Item> */}
             </SubMenu>

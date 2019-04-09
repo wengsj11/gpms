@@ -11,7 +11,7 @@ const routes = [
   { name: '个人中心', component: Profile, path: '/profile'},
   { name: '开题报告', component: Proposal, path: '/PaperManage/Proposal/Index'},
   { name: '开题报告详情', component: ProposalDetail, path: '/PaperManage/Proposal/Detail'},
-  { name: '中期检查', component: MidTermExam, path: '/PaperManage/MidTermExam'},
+  { name: '中期检查', component: MidTermExam, path: '/PaperManage/MidTermExam/Index'},
   { name: '管理后台', component: NotFound, path: '/404', isWrong: true,}
 ]
 export default routes;
