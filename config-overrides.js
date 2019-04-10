@@ -12,8 +12,8 @@ module.exports = override(
   }),
   disableEsLint(),
   addWebpackAlias({
-    ["containers"]: path.resolve(__dirname, "src/containers"),
-    ["components"]: path.resolve(__dirname, "src/components"),
-    ["helper"]: path.resolve(__dirname, "src/helper"),
+    // ["containers"]: path.resolve(__dirname, "src/containers"),
+    // ["components"]: path.resolve(__dirname, "src/components"),
+    // ["helper"]: path.resolve(__dirname, "src/helper"),
   }),
 );

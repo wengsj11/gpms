@@ -58,7 +58,7 @@ class NewContainerLayout extends Component {
             <Button style={{marginTop:5}} onClick={this.callBack} icon="rollback">返回</Button>
           </Col>
         </Row>
-        <Card className='card-bg' style={{height:this.state.nowHeight,overflow:'auto'}}>{this.props.children}</Card>
+        <Card className='card-bg' bordered={false} style={{height:this.state.nowHeight,overflow:'auto'}}>{this.props.children}</Card>
       </div>
     )
   }
