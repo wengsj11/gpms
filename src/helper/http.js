@@ -49,3 +49,10 @@ export async function put(url,body,config) {
     return null;
   }
 }
+
+export default {
+  get,
+  post,
+  del,
+  put
+}

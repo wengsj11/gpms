@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import NewContainerLayout from 'components/NewContainerLayout'
 import { Row, Col, Input, Table, Select, Button, Tag, Divider} from 'antd'
 
+import { getProposalListData } from './actions'
+
 export default class Proposal extends Component {
   constructor(props) {
     super(props)
@@ -10,11 +12,21 @@ export default class Proposal extends Component {
       submit_type : '',
       is_viewd: '',
       time_begin: '',
-      time_end: ''
+      time_end: '',
+      list_data: {}
     }
   }
 
+  componentDidMount() {
+    const {title, submit_type, is_viewd, time_begin, time_end} = this.state;
+    // this.setState({
+    //   list_data: getProposalListData({title, submit_type, is_viewd, time_begin, time_end})
+    // })
+  }
+
   render() {
+
+    const {list_data} = this.state
 
     const dataSource = [
       {
@@ -116,6 +128,7 @@ export default class Proposal extends Component {
         <Table 
           dataSource={dataSource} 
           columns={columns} 
+          loading={!list_data}
         />
       </NewContainerLayout>
     )
