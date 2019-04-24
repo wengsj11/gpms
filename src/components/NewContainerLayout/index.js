@@ -9,7 +9,7 @@ class NewContainerLayout extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      nowHeight: window.innerHeight - 80,
+      nowHeight: window.innerHeight - 64 - 51,
     }
   }
 
@@ -48,17 +48,21 @@ class NewContainerLayout extends Component {
 
     return (
       <div>
-        <Row>
+        <Row style={{backgroundColor: '#fafafa',padding: 5}}>
           <Col span={22}>
-            <Breadcrumb style={{fontSize:14,marginTop:10,marginBottom:10}} separator=">">
+            <Breadcrumb style={{fontSize:14,marginTop:10,marginBottom:10,marginLeft: 10}} separator=">">
               {breadcrumbItems}                                                    
             </Breadcrumb>
           </Col>
           <Col className={this.props.history.length > 1 ? 'col-xs-2 text-right':'display-none'}>
-            <Button style={{marginTop:5}} onClick={this.callBack} icon="rollback">返回</Button>
+            <Button style={{marginTop:5, marginRight: 10}} onClick={this.callBack} icon="rollback">返回</Button>
           </Col>
         </Row>
-        <Card className='card-bg' bordered={false} style={{height:this.state.nowHeight,overflow:'auto'}}>{this.props.children}</Card>
+        <Card className='card-bg' bordered={false} style={{height:this.state.nowHeight,overflow:'auto',border: '1px solid #e8e8e8',backgroundColor: '#f0f2f5'}}>
+          <div style={{padding:20, backgroundColor: '#fff'}}>
+            {this.props.children}
+          </div>
+        </Card>
       </div>
     )
   }

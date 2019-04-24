@@ -95,7 +95,7 @@ export default class MainLayout extends Component {
             /> */}
           </Header>
           <Content style={{
-            margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280,
+             minHeight: 280,
           }}
           >
             <Switch >
