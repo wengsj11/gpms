@@ -72,8 +72,6 @@ export default class Proposal extends Component {
       {title: '创建时间',dataIndex: 'time',key: 'time'},
       {title: '操作',dataIndex: 'action',key: 'action',render: (text, record) => (
         <span>
-          <a href="javascript:;">详情</a>
-          <Divider type="vertical" />
           <a href="javascript:;">下载</a>
           <Divider type="vertical" />
           <a href="javascript:;">删除</a>
@@ -121,7 +119,7 @@ export default class Proposal extends Component {
           <Col span={6} offset={18}>
             <div style={{ display: 'inline-flex', width: '100%', justifyContent:'flex-end'}}>
               <Button type="primary" icon="search" style={{marginRight:20 }}>搜索</Button>
-              <Button icon="plus">新增</Button>
+              <Button icon="plus" onClick={()=>{this.props.history.push('/PaperManage/proposal/Create')}}>新增</Button>
             </div>
           </Col>
         </Row>

@@ -17,3 +17,44 @@ code {
   width: 100px;
   text-align: right;
 }
+.ant-card {
+  color: #000 !important;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-content {
+  overflow: auto;
+  margin-top: -16px;
+}
+
+.card-container>.ant-table-wrapper {
+  background: #fff;
+  padding: 16px;
+  height: 100%;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-content>.ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+  height: 100%;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-bar {
+  border-color: #fff;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+
+.ant-card .ant-layout-content {
+  background-color: #fff;
+  padding: 24px;
+  margin: 0;
+  min-height: 280px;
+}

@@ -25,7 +25,7 @@ class NewContainerLayout extends Component {
       '/PaperManage': '论文管理',
       '/PaperManage/Proposal': '开题报告',
       '/PaperManage/Proposal/Index': '开题报告列表',
-      '/PaperManage/Proposal/Detail': '开题报告详情',
+      '/PaperManage/Proposal/Create': '开题报告创建',
       '/PaperManage/MidTermExam': '中期检查',
       '/PaperManage/MidTermExam/Index': '中期检查列表',
       '/PaperManage/MidTermExam/Detail': '中期检查详情',
@@ -58,8 +58,8 @@ class NewContainerLayout extends Component {
             <Button style={{marginTop:5, marginRight: 10}} onClick={this.callBack} icon="rollback">返回</Button>
           </Col>
         </Row>
-        <Card className='card-bg' bordered={false} style={{height:this.state.nowHeight,overflow:'auto',border: '1px solid #e8e8e8',backgroundColor: '#f0f2f5'}}>
-          <div style={{padding:20, backgroundColor: '#fff'}}>
+        <Card className='card-bg' bordered={false} style={{height:this.state.nowHeight,overflow:'auto',border: '1px solid #e8e8e8',backgroundColor: '#f0f2f5',padding:0}}>
+          <div style={{backgroundColor: '#fff'}}>
             {this.props.children}
           </div>
         </Card>
